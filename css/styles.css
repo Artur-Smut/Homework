@@ -4,6 +4,15 @@
 
 /* акцент #2196F3 */
 
+
+body{
+    font-family: 'Roboto',
+    sans-serif;
+}
+
+
+
+
 ul {
     list-style: none;
 }
@@ -19,7 +28,7 @@ ul {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
@@ -36,7 +45,7 @@ ul {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
@@ -57,7 +66,7 @@ ul {
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -66,6 +75,8 @@ ul {
 
 .order{
     background-color: #2196F3;
+    cursor: pointer;
+    
 }
 
 
@@ -74,7 +85,7 @@ ul {
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.87;
     
     display: flex;
     align-items: center;
@@ -92,13 +103,47 @@ ul {
     background-color: #F5F4FA;
 }
 
+
+
+.team-name{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    /* identical to box height */
+    
+    text-align: left;
+    letter-spacing: 0.03em;
+    
+    color: #212121;
+}
+
+
+
+
+.team-place{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    /* identical to box height */
+    
+    text-align: left;
+    letter-spacing: 0.03em;
+    
+    color: #757575;
+}
+
+
 .text-features{
     color: #757575;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
     letter-spacing: 0.03em;
 }
 
@@ -108,7 +153,7 @@ ul {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
@@ -119,7 +164,7 @@ ul {
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
@@ -131,10 +176,39 @@ ul {
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+}
+
+
+
+.port-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    
+    letter-spacing: 0.06em;
+    
+    color: #212121;
+}
+
+
+
+.port-li-p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    /* identical to box height, or 188% */
+    
+    letter-spacing: 0.03em;
+    
+    color: #757575;
 }
 
 
@@ -148,7 +222,7 @@ ul {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
     /* or 171% */
     
     letter-spacing: 0.03em;
@@ -162,7 +236,7 @@ ul {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
     /* or 171% */
     
     letter-spacing: 0.03em;
@@ -174,3 +248,46 @@ ul {
 a {
     text-decoration: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ПОРТФОЛИО */
+.portfolio-btn{
+    background-color: #F5F4FA;
+    cursor: pointer;
+}
+
+
+.portfolio-btn-text{
+    color: #212121;
+}
+
+.portfolio-btn:hover, .portfolio-btn:focus{
+    background-color: #2196F3;
+}
+
+.portfolio-btn-text:hover, .portfolio-btn-text:focus{
+    color: #FFFFFF;
+}
+
+
