@@ -17,6 +17,23 @@ ul {
     list-style: none;
 }
 
+address{
+    font-style: normal;
+}
+
+.logo{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.20;
+    
+    
+    letter-spacing: 0.03em;
+    
+    color: #2196F3;
+}
+
+
 .head{
     background-color: #fff;
 }
@@ -24,8 +41,8 @@ ul {
 
 .site-nav .link{
     color: #212121;
-    font-family: 'Roboto';
-    font-style: normal;
+   
+   
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -41,8 +58,8 @@ ul {
 
 .mail-tel .link-mt{
      color: #757575;
-    font-family: 'Roboto';
-    font-style: normal;
+   
+    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -62,8 +79,7 @@ ul {
 /* Эффективные решения для вашего бизнеса */
 .main-text{
     color: #fff;
-    font-family: 'Roboto';
-    font-style: normal;
+    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -81,8 +97,8 @@ ul {
 
 
 .order-text{
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: inherit;
+   
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -106,8 +122,8 @@ ul {
 
 
 .team-name{
-    font-family: 'Roboto';
-    font-style: normal;
+   
+ 
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -123,10 +139,7 @@ ul {
 
 
 .team-place{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
+    
     line-height: 1.18;
     /* identical to box height */
     
@@ -139,9 +152,9 @@ ul {
 
 .text-features{
     color: #757575;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
+    
+   
+    
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -149,8 +162,8 @@ ul {
 
 .title-features{
     color: #212121;
-    font-family: 'Roboto';
-    font-style: normal;
+    
+    
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -160,8 +173,8 @@ ul {
 
 
 .what-doing{
-    font-family: 'Roboto';
-    font-style: normal;
+   
+    
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -172,8 +185,8 @@ ul {
 
 
 .team-title{
-    font-family: 'Roboto';
-    font-style: normal;
+    
+   
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -185,8 +198,8 @@ ul {
 
 
 .port-title{
-    font-family: 'Roboto';
-    font-style: normal;
+    
+   
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -199,10 +212,7 @@ ul {
 
 
 .port-li-p{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
+    
     line-height: 1.87;
     /* identical to box height, or 188% */
     
@@ -218,9 +228,9 @@ ul {
 
 
 .address-foot{
-    font-family: 'Roboto';
+    
     font-style: normal;
-    font-weight: 400;
+    
     font-size: 14px;
     line-height: 1.7;
     /* or 171% */
@@ -232,9 +242,9 @@ ul {
 
 
 .data-foot{
-    font-family: 'Roboto';
+    
     font-style: normal;
-    font-weight: 400;
+   
     font-size: 14px;
     line-height: 1.7;
     /* or 171% */
