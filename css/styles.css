@@ -5,6 +5,17 @@
 /* акцент #2196F3 */
 
 
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+::after{
+    box-sizing: inherit;
+}
+
+
 body{
     font-family: 'Roboto',
     sans-serif;
@@ -12,10 +23,19 @@ body{
 
 
 
+.section{
+    padding-top: 94px;
+    
+}
+
 
 ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
+
+
 
 address{
     font-style: normal;
@@ -27,6 +47,8 @@ address{
     font-size: 26px;
     line-height: 1.20;
     
+    margin-right: 93px;
+
     
     letter-spacing: 0.03em;
     
@@ -43,9 +65,47 @@ address{
 }
 
 
+header{
+    border-bottom: 1px solid #ECECEC;
+}
+
+
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    /* outline: 2px solid tomato; */
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.site-nav .item{
+    /* outline: 1px solid tomato; */
+    margin-right: 50px;
+}
+
+
+.main-nav{
+    display: flex;
+    align-items: center;
+}
+
+
+.site-nav .item:last-child{
+    margin-right: 0;    
+}
+
+
+.site-nav{
+    display: flex;
+    
+}
+
+
 .site-nav .link{
     color: #212121;
-   
+
    
     font-weight: 500;
     font-size: 14px;
@@ -65,7 +125,6 @@ address{
 
 .mail-tel .link-mt{
      color: #757575;
-   
     
     font-weight: 500;
     font-size: 14px;
@@ -73,54 +132,116 @@ address{
     letter-spacing: 0.02em;
 }
 
+
+.mail-tel{
+    display: flex;
+    margin-left: auto;
+
+}
+
+
+.mail-tel :not(:first-child){
+   margin-left: 50px;
+}
+
+
 .mail-tel .link-mt:hover, 
 .mail-tel .link-mt:focus{
     color: #2196F3;
+    
 }
 
 
 .under-head{
     background-color: #2F303A;
+    text-align: center;
 }
 
 /* Эффективные решения для вашего бизнеса */
 .main-text{
     color: #fff;
-    
+    margin: 0;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
  
 
 .order{
     background-color: #2196F3;
+    display: inline-block;
     cursor: pointer;
-    
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 32px;
+    padding-left: 32px;
+    min-width: 200px;
+    height: 50px;
+    border-radius: 4px;
+
+
 }
 
 
 .order-text{
     font-family: inherit;
-   
+   display: inline-block;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    
+    text-align: center;
     color: #FFFFFF;
+    
 }
+
+
+
+.feature-list{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.feature-list .item{
+    width: 270px;
+}
+
+.feature-list .item + .item{
+    margin-left: 30px;    
+}
+
+
+.features h2{
+    margin-top: 0;
+}
+
 
 .features{
+    padding-top: 94px;
+    padding-bottom: 94px;
 
 }
+
 
 .team{
     background-color: #F5F4FA;
+    padding-bottom: 94px;
 }
+
+
+.flex-element-team{
+    width: 270px;
+    margin-right: 30px;
+}
+
+.flex-element-team:nth-child(4){
+    margin-right: 0;
+}
+
 
 
 
@@ -136,6 +257,9 @@ address{
     letter-spacing: 0.03em;
     
     color: #212121;
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
 }
 
 
@@ -150,14 +274,19 @@ address{
     letter-spacing: 0.03em;
     
     color: #757575;
+
+
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
 }
 
 
 .text-features{
     color: #757575;
     
-   
-    
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -166,7 +295,8 @@ address{
 .title-features{
     color: #212121;
     
-    
+    margin-bottom: 10px;    
+    margin-top: 0;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -175,9 +305,17 @@ address{
 }
 
 
-.what-doing{
-   
+.what-doing-section{
+    padding-bottom: 94px;
+}
+
+
+
+
+.what-doing {
+    margin-top: 0;
     
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -185,53 +323,48 @@ address{
     letter-spacing: 0.03em;
     color: #212121;
 }
+
+
+
+
 
 
 .team-title{
-    
-   
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-}
+    margin-bottom: 50px;
+    margin-top: 0;
+    }
 
 
 
-.port-title{
-    
-   
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    
-    letter-spacing: 0.06em;
-    
-    color: #212121;
-}
 
 
 
-.port-li-p{
-    
-    line-height: 1.87;
-    /* identical to box height, or 188% */
-    
-    letter-spacing: 0.03em;
-    
-    color: #757575;
-}
+
+
+
+
+
+
 
 
 .foot{
     background-color: #2F303A;
+    height: 252px;
 }
 
 
 .address-foot{
     
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 9px;
+        margin: 0;
     
     font-size: 14px;
     line-height: 1.7;
@@ -245,7 +378,6 @@ address{
 
 .data-foot{
     
-    
    
     font-size: 14px;
     line-height: 1.7;
@@ -257,9 +389,27 @@ address{
 }
 
 
+footer .logo{
+      display: inline-block;
+      margin-top: 60px;
+}
+
+.data-foot-tel{
+    margin-bottom: 60px;
+    
+}
+
+.data-foot-mail{
+    padding-bottom: 9px;
+}
+
+
 .foot-stu{
     color: #fff;
 }
+
+
+
 
 
 a {
@@ -307,6 +457,23 @@ a {
     color: #212121;
 }
 
+
+.flex-container-btn{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 280px;
+}
+
+.flex-btn-element{
+    margin-right: 30px;
+}
+
+
+.flex-btn-element:nth-child(5){
+    margin-right: 0;
+}
+
+
 .portfolio-btn:hover, .portfolio-btn:focus{
     background-color: #2196F3;
 }
@@ -315,4 +482,73 @@ a {
     color: #FFFFFF;
 }
 
+.port-li-p {
 
+    line-height: 1.87;
+    /* identical to box height, or 188% */
+
+    letter-spacing: 0.03em;
+    margin: 0;
+    color: #757575;
+    padding-bottom: 20px;
+}   
+
+.port-title {
+    padding-top: 20px;
+    padding-bottom: 4px;
+     margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+
+    letter-spacing: 0.06em;
+
+    color: #212121;
+}
+
+.port-img-section{
+    padding-bottom: 94px;
+}
+
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+
+.flex-element{
+    width: 370px;
+    
+    margin-right: 30px;
+
+    margin-bottom: 30px;
+
+   
+}
+
+
+.flex-element:nth-last-child(-n+3){
+    margin-bottom: 0;
+}
+
+
+.flex-element:nth-child(3n){
+    margin-right: 0;
+}
+
+
+.portfolio-img-text{
+border-bottom: 1px solid #EEEEEE;
+border-left:  1px solid #EEEEEE;
+border-right: 1px solid #EEEEEE;;
+margin: 0;
+padding: 0;
+
+}
+
+.h1-hide{
+    margin: 0;
+    padding: 0;
+}

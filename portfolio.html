@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+
 
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
@@ -15,14 +17,14 @@
     
 
 <header class="head">
-    <nav>
+    <nav class="container main-nav" >
         <a class="logo" href="/">Web<span class="logo-stu">Studio</span></a>
         
         
         <ul class="site-nav list">
-            <li><a class="link" href="./index.html">Студия</a></li>
-            <li><a class="link current" href="/">Потрфолио</a></li>
-            <li><a class="link" href="/Контакты">Контакты</a></li>
+            <li class="item"><a class="link" href="./index.html">Студия</a></li>
+            <li class="item"><a class="link current" href="/">Потрфолио</a></li>
+            <li class="item"><a class="link" href="/Контакты">Контакты</a></li>
         </ul>
         
         <ul class="mail-tel">
@@ -38,49 +40,72 @@
 
 <main>
 
-<section>
-      <h1>Наше портфолио</h1>
-
-      <nav>
-          <ul>
-            <li><button class="portfolio-btn" type="button"><span class="portfolio-btn-text">Все</span></button></li>
-            <li><button class="portfolio-btn" type="button"><span class="portfolio-btn-text">Веб сайты</span></button></li>
-            <li><button class="portfolio-btn" type="button"><span class="portfolio-btn-text">Приложения</span></button></li>
-            <li><button class="portfolio-btn" type="button"><span class="portfolio-btn-text">Дизайн</span></button></li>
-            <li><button class="portfolio-btn" type="button"><span class="portfolio-btn-text">Маркетинг</span></button></li>
-            
-          </ul>
-      </nav>
-</section>
-
-
-
-<section>
-    <ul>
-        <li><img src="./img/techno1.jpg"      alt="Технокряк" width="370"> <h2 class="port-title">Технокряк</h2> <p class="port-li-p">Веб-сайт</p> 
-        </li>
-        <li><img src="./img/basket2.jpg"      alt="Баскетбольний постер" width="370"> <h2 class="port-title">Постер New Orlean vs Golden Star</h2> <p class="port-li-p">Дизайн</p> 
-</li>
-        <li><img src="./img/seafood3.jpg"      alt="Приложение seafood" width="370"> <h2 class="port-title">Ресторан Seafood</h2> <p class="port-li-p">Приложение</p> 
-</li>
-        <li><img src="./img/prime4.jpg"        alt="Проект Prime" width="370"> <h2 class="port-title">Проект Prime</h2><p class="port-li-p">Маркетинг</p> 
-</li>
-        <li><img src="./img/boxes5.jpg"        alt="Приложение Boxes" width="370"><h2 class="port-title">Проект Boxes</h2><p class="port-li-p">Приложение</p> 
-</li>
-        <li><img src="./img/inspiration6.jpg"  alt="Сайт" width="370"><h2 class="port-title">Inspiration has no Borders</h2><p class="port-li-p">Веб-сайт</p> 
-</li>
-        <li><img src="./img/limited7.jpg"      alt="Издание Limited Edition" width="370"><h2 class="port-title">Издание Limited Edition</h2><p class="port-li-p">Дизайн</p> 
-</li>
-        <li><img src="./img/lab8.jpg"          alt="Проект LAB" width="370"><h2 class="port-title">Проект LAB</h2><p class="port-li-p">Маркетинг</p> 
-</li>
-        <li><img src="./img/growing9.jpg"      alt="  Приложение Growing Business" width="370"><h2 class="port-title">Growing Business</h2><p class="port-li-p">Приложение</p> 
-</li>
-
-    </ul>
-</section>
-
-
+<section class="section">
+      <div class="container">
+          <h1 class="h1-hide">Наше портфолио</h1>
     
+    <nav>
+        <ul class="flex-container-btn">
+            <li class="flex-btn-element"><button class="portfolio-btn" type="button"><span class="portfolio-btn-text">Все</span></button></li>
+            <li class="flex-btn-element"><button class="portfolio-btn" type="button"><span class="portfolio-btn-text">Веб сайты</span></button></li>
+            <li class="flex-btn-element"><button class="portfolio-btn" type="button"><span class="portfolio-btn-text">Приложения</span></button></li>
+            <li class="flex-btn-element"><button class="portfolio-btn" type="button"><span class="portfolio-btn-text">Дизайн</span></button></li>
+            <li class="flex-btn-element"><button class="portfolio-btn" type="button"><span class="portfolio-btn-text">Маркетинг</span></button></li>
+    
+        </ul>
+    </nav>
+</div>
+</section>
+
+
+
+<section class="port-img-section">
+    <div class="container">
+        
+            <ul class="flex-container">
+                <li class="flex-element"><img src="./img/techno1.jpg" alt="Технокряк" width="370">
+                 <div class="portfolio-img-text">
+                     <h2 class="port-title">Технокряк</h2>
+                      <p class="port-li-p">Веб-сайт</p>
+                 </div>
+                </li>
+                <li class="flex-element"><img src="./img/basket2.jpg" alt="Баскетбольний постер" width="370">
+                 <h2 class="port-title">Постер New Orlean vs Golden Star</h2>
+                 <p class="port-li-p">Дизайн</p>
+                </li>
+                <li class="flex-element"><img src="./img/seafood3.jpg" alt="Приложение seafood" width="370">
+                    <h2 class="port-title">Ресторан Seafood</h2>
+                    <p class="port-li-p">Приложение</p>
+                </li>
+                <li class="flex-element"><img src="./img/prime4.jpg" alt="Проект Prime" width="370">
+                    <h2 class="port-title">Проект Prime</h2>
+                    <p class="port-li-p">Маркетинг</p>
+                </li>
+                <li class="flex-element"><img src="./img/boxes5.jpg" alt="Приложение Boxes" width="370">
+                    <h2 class="port-title">Проект Boxes</h2>
+                    <p class="port-li-p">Приложение</p>
+                </li>
+                <li class="flex-element"><img src="./img/inspiration6.jpg" alt="Сайт" width="370">
+                    <h2 class="port-title">Inspiration has no Borders</h2>
+                    <p class="port-li-p">Веб-сайт</p>
+                </li>
+                <li class="flex-element"><img src="./img/limited7.jpg" alt="Издание Limited Edition" width="370">
+                    <h2 class="port-title">Издание Limited Edition</h2>
+                    <p class="port-li-p">Дизайн</p>
+                </li>
+                <li class="flex-element"><img src="./img/lab8.jpg" alt="Проект LAB" width="370">
+                    <h2 class="port-title">Проект LAB</h2>
+                    <p class="port-li-p">Маркетинг</p>
+                </li>
+                <li class="flex-element"><img src="./img/growing9.jpg" alt="  Приложение Growing Business" width="370">
+                    <h2 class="port-title">Growing Business</h2>
+                    <p class="port-li-p">Приложение</p>
+                </li>
+            
+            </ul>
+        
+    </div>
+</section>
 
 
 
@@ -98,8 +123,8 @@
         <address>
             <p class="address-foot">г. Киев, пр-т Леси Украинки, 26 <br></p>
             <ul>
-                <li><a class="data-foot" href="mailto:info@example.com">info@example.com</a></li>
-                <li><a class="data-foot" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                <li><a class="data-foot" href="mailto:info@example.com"><span class="data-foot-mail">info@example.com</span>    </a></li>
+                <li><a class="data-foot" href="tel:+380991111111"> <span class="data-foot-tel">+38 099 111 11 11</span></a></li>
             </ul>
         </address>
     </footer>

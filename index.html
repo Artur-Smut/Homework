@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
      <link rel="stylesheet" href="./css/styles.css" />
 
 </head>
@@ -16,14 +16,15 @@
 <body>
     
         <header class="head">
-            <nav>
+            <nav class="container main-nav">
                 <a class="logo" href="/">Web<span class="logo-stu">Studio</span></a>
                 
                 
                 <ul class="site-nav list">
-                    <li><a class="link current" href="/">Студия</a></li>
-                    <li><a class="link" href="./portfolio.html">Потрфолио</a></li>
-                    <li><a class="link" href="/Контакты">Контакты</a></li>
+                    <li class="item"><a class="link current" href="/">Студия</a></li>
+                    <li class="item"><a class="link" href="./portfolio.html">Потрфолио</a></li>
+                    <li class="item"><a class="link" href="/Контакты">Контакты</a></li>
+                    
                 </ul>
                 
                 <ul class="mail-tel">
@@ -36,6 +37,9 @@
                           
         
          </header>
+
+
+
     <main>
         <section class="under-head">
             <h1 class="main-text">Эффективные решения <br> для вашего бизнеса</h1>
@@ -47,28 +51,31 @@
 
 
         <section class="features">
+        <div class="container">
             <h2>Наши особенности</h2>
-                <ul>
-                    <li>
-                        <h3 class="title-features">Внимание к деталям</h3>
-                        <p class="text-features">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                    </li>
-                    <li>
-                        <h3 class="title-features">Пунктуальность</h3>
-                        <p class="text-features">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                    </li>
-                    <li>
-                        <h3 class="title-features">Планирование</h3>
-                        <p class="text-features">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                    </li>
-                    <li>
-                        <h3 class="title-features">Современные технологии</h3>
-                        <p class="text-features">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+            <ul class="feature-list">
+                <li class="item">
+                <h3 class="title-features">Внимание к деталям</h3>
+                <p class="text-features">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                </li>
+                <li class="item">
+                    <h3 class="title-features">Пунктуальность</h3>
+                    <p class="text-features">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                </li>
+                <li class="item">
+                    <h3 class="title-features">Планирование</h3>
+                    <p class="text-features">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                </li>
+                <li class="item">
+                    <h3 class="title-features">Современные технологии</h3>
+                    <p class="text-features">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+            
+                </li>
+            
+            </ul>
 
-                    </li>
-
-                </ul>
-
+        </div>
+            
                  
                
 
@@ -76,64 +83,78 @@
         </section>
 
 
-                <section>
-                    <h2 class="what-doing">Чем мы занимаемся</h2>
-                    <ul>
-                        <li><img src="./img/img1.jpg" alt="Делаем сайты" width="370"></li>
-                        <li><img src="./img/img2.jpg" alt="Адаптируем сайты для телефонов" width="370"></li>
-                        <li><img src="./img/img3.jpg" alt="Адаптируем сайты для планшетов" width="370"></li>
-                    </ul>
+                <section class="what-doing-section">
+                    <div class="container">
+                        
+                            <h2 class="what-doing">Чем мы занимаемся</h2>
+                            <ul class="flex-container">
+                                <li class="flex-element"><img src="./img/img1.jpg" alt="Делаем сайты" width="370"></li>
+                                <li class="flex-element"><img src="./img/img2.jpg" alt="Адаптируем сайты для телефонов" width="370"></li>
+                                <li class="flex-element"><img src="./img/img3.jpg" alt="Адаптируем сайты для планшетов" width="370"></li>
+                            </ul>
+                        </div>
+                        
+                    
                 </section>
         
         
         
         
         <section class="team">
-            <h2 class="team-title">Наша команда</h2>
-            <ul>
-                <li>
-                    <img src="./img/Igor.jpg" alt="Фото Игоря Демьяненко" width="270">
-                    
-                        <h3 class="team-name">Игорь Демьяненко</h3>
-                        <p lang="en" class="team-place">Product designer</p>
-                </li>
-
-                <li>
-                    <img src="./img/Olga.jpg" alt="Фото Фото Ольги Репины" width="270">
-                    
+            <div class="container">
+                <h2 class="team-title">Наша команда</h2>
+                <ul class="flex-container">
+                    <li class="flex-element-team">
+                        <img src="./img/Igor.jpg" alt="Фото Игоря Демьяненко" width="270">
+                     
+                           <h3 class="team-name">Игорь Демьяненко</h3>
+                           <p lang="en" class="team-place">Product designer</p>
+              
+                        
+                    </li>
+                
+                    <li class="flex-element-team">
+                        <img src="./img/Olga.jpg" alt="Фото Фото Ольги Репины" width="270">
+                
                         <h3 class="team-name">Ольга Репина</h3>
                         <p lang="en" class="team-place">Frontend Developer</p>
-                    
-                </li>
-
-                <li>
-                    <img src="./img/Kolia.jpg" alt="Фото Николая Тарасова" width="270">
-                    
+                
+                    </li>
+                
+                    <li class="flex-element-team">
+                        <img src="./img/Kolia.jpg" alt="Фото Николая Тарасова" width="270">
+                
                         <h3 class="team-name">Николай Тарасов</h3>
                         <p lang="en" class="team-place">Marketing</p>
-                    
-                </li>
-
-                <li>
-                    <img src="./img/Misha.jpg" alt="Фото Михаила Ермакова" width="270">
-                    
+                
+                    </li>
+                
+                    <li class="flex-element-team">
+                        <img src="./img/Misha.jpg" alt="Фото Михаила Ермакова" width="270">
+                
                         <h3 class="team-name">Михаил Ермаков</h3>
                         <p lang="en" class="team-place">UI Designer</p>
-                    
-                </li>
-            </ul>
+                
+                    </li>
+                </ul>
+            </div>
+          
         </section>
     </main>
     <footer class="foot">
-            <a class="logo" href="/">Web<span class="foot-stu">Studio</span></a>
-        
-        <address>
-            <p class="address-foot">г. Киев, пр-т Леси Украинки, 26 <br></p>
-                <ul>
-                    <li><a class="data-foot" href="mailto:info@example.com">info@example.com</a></li>
-                    <li><a class="data-foot" href="tel:+380991111111">+38 099 111 11 11</a></li>
-                </ul>
-        </address>
+            <div class="container">
+                <a class="logo" href="/">Web<span class="foot-stu">Studio</span></a>
+                
+                <address>
+                    <p class="address-foot">г. Киев, пр-т Леси Украинки, 26 <br></p>
+                    <ul>
+                        <li><a class="data-foot" href="mailto:info@example.com"> <span class="data-foot-mail">info@example.com</span>
+                            </a></li>
+                        <li><a class="data-foot" href="tel:+380991111111"> <span class="data-foot-tel">+38 099 111 11 11</span></a></li>
+                    </ul>
+                </address>
+            </div>
+          
     </footer>
 </body>
 
