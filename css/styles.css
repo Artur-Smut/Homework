@@ -96,14 +96,14 @@ header{
 .container{
     margin-left: auto;
     margin-right: auto;
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
 }
 
 .site-nav .item{
-    outline: 1px solid tomato;
+    /* outline: 1px solid tomato; */
     margin-right: 50px;
 }
 
