@@ -9,17 +9,31 @@ html{
     box-sizing: border-box;
 }
 
-*,
-*::before,
-::after{
-    box-sizing: inherit;
-}
+
 
 
 body{
     font-family: 'Roboto',
     sans-serif;
 }
+
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
 
 
 
@@ -71,17 +85,25 @@ header{
 
 
 
+.header-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+
 .container{
     margin-left: auto;
     margin-right: auto;
-    /* outline: 2px solid tomato; */
-    width: 1230px;
+    outline: 2px solid tomato;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
 }
 
 .site-nav .item{
-    /* outline: 1px solid tomato; */
+    outline: 1px solid tomato;
     margin-right: 50px;
 }
 
@@ -90,6 +112,10 @@ header{
     display: flex;
     align-items: center;
 }
+
+
+
+
 
 
 .site-nav .item:last-child{
@@ -155,6 +181,8 @@ header{
 .under-head{
     background-color: #2F303A;
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 /* Эффективные решения для вашего бизнеса */
@@ -230,6 +258,7 @@ header{
 .team{
     background-color: #F5F4FA;
     padding-bottom: 94px;
+    padding-top: 94px;
 }
 
 
@@ -259,10 +288,15 @@ header{
     color: #212121;
     padding: 0;
     margin: 0;
-    margin-top: 30px;
+   
 }
 
 
+
+.team-description{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 
 .team-place{
@@ -362,8 +396,8 @@ header{
 .address-foot{
     
         padding: 0;
-        padding-top: 20px;
-        padding-bottom: 9px;
+        
+        margin-bottom: 9px;
         margin: 0;
     
     font-size: 14px;
@@ -391,7 +425,8 @@ header{
 
 footer .logo{
       display: inline-block;
-      margin-top: 60px;
+      margin-right: 0;
+      margin-bottom: 20px;
 }
 
 .data-foot-tel{
@@ -399,15 +434,19 @@ footer .logo{
     
 }
 
-.data-foot-mail{
-    padding-bottom: 9px;
-}
+
 
 
 .foot-stu{
     color: #fff;
 }
 
+
+
+
+.footer-data-mb:not(:last-child){
+    margin-bottom: 9px;
+}
 
 
 
@@ -427,7 +466,9 @@ a {
 
 
 
-
+img{
+    display: block;
+}
 
 
 
@@ -448,7 +489,7 @@ a {
     line-height: 1.6;
     
     letter-spacing: 0.03em;
-    
+    border: 0;
     color: #212121;
 }
 
@@ -465,7 +506,9 @@ a {
 }
 
 .flex-btn-element{
-    margin-right: 30px;
+    margin-right: 8px;
+    margin-bottom: 50px;
+
 }
 
 
@@ -476,6 +519,7 @@ a {
 
 .portfolio-btn:hover, .portfolio-btn:focus{
     background-color: #2196F3;
+    
 }
 
 .portfolio-btn-text:hover, .portfolio-btn-text:focus{
@@ -490,13 +534,12 @@ a {
     letter-spacing: 0.03em;
     margin: 0;
     color: #757575;
-    padding-bottom: 20px;
 }   
 
 .port-title {
-    padding-top: 20px;
-    padding-bottom: 4px;
-     margin: 0;
+    
+    margin-bottom: 4px;
+    margin: 0;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -548,7 +591,3 @@ padding: 0;
 
 }
 
-.h1-hide{
-    margin: 0;
-    padding: 0;
-}

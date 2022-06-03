@@ -16,25 +16,29 @@
 <body>
     
         <header class="head">
-            <nav class="container main-nav">
-                <a class="logo" href="/">Web<span class="logo-stu">Studio</span></a>
-                
-                
-                <ul class="site-nav list">
-                    <li class="item"><a class="link current" href="/">Студия</a></li>
-                    <li class="item"><a class="link" href="./portfolio.html">Потрфолио</a></li>
-                    <li class="item"><a class="link" href="/Контакты">Контакты</a></li>
-                    
+            <div class="container header-container">
+               <nav class=" main-nav">
+               <a class="logo" href="/">Web<span class="logo-stu">Studio</span></a>
+
+
+                 <ul class="site-nav list">
+                   <li class="item"><a class="link current" href="/">Студия</a></li>
+                   <li class="item"><a class="link" href="./portfolio.html">Потрфолио</a></li>
+                   <li class="item"><a class="link" href="/Контакты">Контакты</a></li>
+
                 </ul>
-                
-                <ul class="mail-tel">
-                    <li><a class="link-mt" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                
-                    <li><a class="link-mt" href="tel:+380961111111">+38 096 111 11 11</a></li>
-                </ul>
-            </nav>
-           
-                          
+
+
+               </nav>
+
+               <ul class="mail-tel">
+                   <li><a class="link-mt" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+
+                   <li><a class="link-mt" href="tel:+380961111111">+38 096 111 11 11</a></li>
+               </ul>
+            
+            </div>
+            
         
          </header>
 
@@ -52,7 +56,7 @@
 
         <section class="features">
         <div class="container">
-            <h2>Наши особенности</h2>
+            <h2 class="visually-hidden">Наши особенности</h2>
             <ul class="feature-list">
                 <li class="item">
                 <h3 class="title-features">Внимание к деталям</h3>
@@ -107,8 +111,10 @@
                     <li class="flex-element-team">
                         <img src="./img/Igor.jpg" alt="Фото Игоря Демьяненко" width="270">
                      
-                           <h3 class="team-name">Игорь Демьяненко</h3>
-                           <p lang="en" class="team-place">Product designer</p>
+                          <div class="team-description">
+                                <h3 class="team-name">Игорь Демьяненко</h3>
+                                <p lang="en" class="team-place">Product designer</p>
+                          </div>  
               
                         
                     </li>
@@ -116,24 +122,30 @@
                     <li class="flex-element-team">
                         <img src="./img/Olga.jpg" alt="Фото Фото Ольги Репины" width="270">
                 
+                    <div class="team-description">
                         <h3 class="team-name">Ольга Репина</h3>
                         <p lang="en" class="team-place">Frontend Developer</p>
+                    </div>
                 
                     </li>
                 
                     <li class="flex-element-team">
                         <img src="./img/Kolia.jpg" alt="Фото Николая Тарасова" width="270">
                 
-                        <h3 class="team-name">Николай Тарасов</h3>
-                        <p lang="en" class="team-place">Marketing</p>
+                        <div class="team-description">
+                            <h3 class="team-name">Николай Тарасов</h3>
+                            <p lang="en" class="team-place">Marketing</p>
+                        </div>
                 
                     </li>
                 
                     <li class="flex-element-team">
                         <img src="./img/Misha.jpg" alt="Фото Михаила Ермакова" width="270">
                 
-                        <h3 class="team-name">Михаил Ермаков</h3>
-                        <p lang="en" class="team-place">UI Designer</p>
+                        <div class="team-description">
+                            <h3 class="team-name">Михаил Ермаков</h3>
+                            <p lang="en" class="team-place">UI Designer</p>
+                        </div>
                 
                     </li>
                 </ul>
@@ -143,14 +155,19 @@
     </main>
     <footer class="foot">
             <div class="container">
-                <a class="logo" href="/">Web<span class="foot-stu">Studio</span></a>
+                <a class="logo " href="/">Web<span class="foot-stu">Studio</span></a>
                 
                 <address>
                     <p class="address-foot">г. Киев, пр-т Леси Украинки, 26 <br></p>
                     <ul>
-                        <li><a class="data-foot" href="mailto:info@example.com"> <span class="data-foot-mail">info@example.com</span>
-                            </a></li>
-                        <li><a class="data-foot" href="tel:+380991111111"> <span class="data-foot-tel">+38 099 111 11 11</span></a></li>
+                        <li class="footer-data-mb"><a class="data-foot" href="mailto:info@example.com"> <span class="data-foot-mail">info@example.com</span>
+                            </a>
+                        </li>
+                        <li class="footer-data-mb">
+                            <a class="data-foot" href="tel:+380991111111"> 
+                                <span class="data-foot-tel">+38 099 111 11 11</span>
+                            </a>
+                            </li>
                     </ul>
                 </address>
             </div>
