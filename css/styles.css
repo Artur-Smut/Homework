@@ -84,6 +84,7 @@ address{
 
 header{
     border-bottom: 1px solid #ECECEC;
+    
 }
 
 
@@ -152,30 +153,40 @@ header{
 }
 
 
-.mail-tel .link-mt{
+.link-mt{
      color: #757575;
     
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+
 }
 
 
-.mail-tel{
+
+.contacts{
     display: flex;
     margin-left: auto;
+    
 
 }
 
 
-.mail-tel :not(:first-child){
+
+
+
+
+
+.contacts :not(:first-child){
    margin-left: 50px;
 }
 
 
-.mail-tel .link-mt:hover, 
-.mail-tel .link-mt:focus{
+.contacts .link-mt:hover, 
+.contacts .link-mt:focus{
     color: #2196F3;
     
 }
@@ -186,6 +197,35 @@ header{
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    
+    
+    
+   
+    
+
+    
+
+    
+}
+
+
+
+.overlay{
+    
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient( to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+    ),
+    url("../img/hero-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+
+    
 }
 
 /* Эффективные решения для вашего бизнеса */
@@ -229,6 +269,17 @@ header{
     
 }
 
+.button-icon{
+    height: 12px;
+    width: 16px;
+    margin-right: 10px;
+    fill: #757575;
+    
+}
+
+.button-icon:hover, .button-icon:focus{
+    fill: #2196F3;
+}
 
 
 .feature-list{
@@ -237,11 +288,45 @@ header{
     
 }
 
-.feature-list .item{
+.feature-list .feature-item{
     width: 270px;
 }
 
-.feature-list .item + .item{
+
+.feature-item::before{
+    display: block;
+    content: '';
+    height: 120px;
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.icon-antenna::before{
+    background-image: url(../img/antenna\ 1.svg);
+    
+
+}
+
+
+.icon-clock::before{
+    background-image: url(../img/clock\ 1.svg);
+}
+
+
+.icon-diagram::before{
+    background-image:url(../img/diagram\ 1.svg);
+}
+
+.icon-astronaut::before{
+    background-image: url(../img/astronaut\ 1.svg);
+}
+
+
+.feature-list .feature-item + .feature-item{
     margin-left: 30px;    
 }
 
@@ -258,12 +343,21 @@ header{
 }
 
 
+
+
+
 .team{
     background-color: #F5F4FA;
     padding-bottom: 94px;
     padding-top: 94px;
 }
 
+
+.team-social{
+    background-color: #fff;
+    width: 206px;
+    height: 44px;
+}
 
 .flex-element-team{
     width: 270px;
@@ -286,7 +380,7 @@ header{
     line-height: 1.18;
     /* identical to box height */
     
-    text-align: left;
+   
     letter-spacing: 0.03em;
     
     color: #212121;
@@ -301,7 +395,13 @@ header{
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
+
 
 
 .team-place{
@@ -309,15 +409,40 @@ header{
     line-height: 1.18;
     /* identical to box height */
     
-    text-align: left;
+    margin-bottom: 16px;
     letter-spacing: 0.03em;
     
     color: #757575;
 
 
     padding: 0;
-    margin: 0;
+    margin-right: 0;
+    margin-left: 0;
     margin-top: 10px;
+}
+
+.team-social{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.social-item:not(:last-child){
+    margin-right: 10px;
+
+}
+
+
+
+
+
+.social-item{
+    
+    background-color: blue;
+    height: 44px;
+    width: 44px;
+
 }
 
 
@@ -396,6 +521,8 @@ header{
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+    height: 252px;
+    
 }
 
 
@@ -455,6 +582,11 @@ footer .logo{
 }
 
 
+.foot-container{
+    margin-left: 215px;
+}
+
+
 
 
 a {
@@ -494,7 +626,10 @@ img{
     font-size: 16px;
     line-height: 1.6;
     border-radius: 4px;
-
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
 
     letter-spacing: 0.03em;
     border: 0;
@@ -508,7 +643,7 @@ img{
 .flex-container-btn{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 280px;
+    justify-content: center;
     margin-bottom: 50px;
 }
 
@@ -593,11 +728,12 @@ border-bottom: 1px solid #EEEEEE;
 border-left:  1px solid #EEEEEE;
 border-right: 1px solid #EEEEEE;;
 margin: 0;
-padding-left: 24;
-padding-right: 24px;
+
 padding-top: 20px;
 padding-bottom: 20px;
-outline: 1px solid tomato;
+padding-left: 24px;
+padding-right: 24px;
+/* outline: 1px solid tomato; */
 
 
 }
