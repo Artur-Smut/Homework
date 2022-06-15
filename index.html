@@ -56,9 +56,21 @@
     <main>
         <section class="under-head overlay">
             <h1 class="main-text">Эффективные решения <br> для вашего бизнеса</h1>
-            <button class="order" type="button">
+            <button data-modal-open class="order" type="button">
+                
                 <span class="order-text">Заказать услугу</span> 
             </button>
+
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button data-modal-close>
+                        <svg class="vector">
+                           <use href="./img/Vector.svg"></use> 
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
             
         </section>
 
@@ -101,9 +113,17 @@
                         
                             <h2 class="what-doing">Чем мы занимаемся</h2>
                             <ul class="flex-container">
-                                <li class="flex-element"><img src="./img/img1.jpg" alt="Делаем сайты" width="370"></li>
-                                <li class="flex-element"><img src="./img/img2.jpg" alt="Адаптируем сайты для телефонов" width="370"></li>
-                                <li class="flex-element"><img src="./img/img3.jpg" alt="Адаптируем сайты для планшетов" width="370"></li>
+                                <li class="flex-element what-doing-overlay"><img src="./img/img1.jpg" alt="Делаем сайты" width="370"> 
+                                    <span class="overlay-doing">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</span>
+                                </li>
+                                <li class="flex-element what-doing-overlay"><img src="./img/img2.jpg" alt="Адаптируем сайты для телефонов" width="370">
+                                    <span class="overlay-doing">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</span>
+                                </li>
+                                <li class="flex-element what-doing-overlay"><img src="./img/img3.jpg" alt="Адаптируем сайты для планшетов" width="370">
+                                    <span class="overlay-doing">
+                                        Дизайнерские решения
+                                    </span>
+                                </li>
                             </ul>
                         </div>
                         
@@ -495,6 +515,7 @@
             
           
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

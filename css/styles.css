@@ -257,6 +257,36 @@ header{
 }
 
 
+.vector{
+    fill: red;
+
+
+}
+
+.backdrop.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    width: 530px;
+    height: 580px;
+}
+
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);;
+}
+
 .order-text{
     font-family: inherit;
    display: inline-block;
@@ -497,7 +527,34 @@ header{
 }
 
 
+.what-doing-overlay{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.overlay-doing{
+    position: absolute;
+    background-color: rgba(47, 48, 58, 0.8);;
+    bottom: 0;
+    right: 0;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    width: 100%;
+    height: 70px;
+    color: #FFFFFF;
+
+    padding-top: 27px;
+    align-items: center;
+}
 
 
 
@@ -558,7 +615,7 @@ header{
 }
 
 
-.clients-links:hover{
+.clients-links:hover, .clients-links:focus{
     border-color: #2196F3;
     color: #2196F3;
 }
@@ -663,6 +720,7 @@ footer .logo{
     
     color: #FFFFFF;
     margin: 0;
+    margin-bottom: 20px;
     
 }
 
@@ -685,17 +743,21 @@ footer .logo{
 
 
 .join-list{
-    background-color: rgba(255, 255, 255, 0.1);;
+    
     height: 44px;
     width: 44px;
-    border-radius: 50%;
+    
     
 }
 
+.join-link{
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);;
+
+}
 
 
-
-.join-list:hover{
+.join-link:hover, .join-link:focus{
     background-color: #2196F3;
 }
 
@@ -826,6 +888,7 @@ img{
 .flex-container{
     display: flex;
     flex-wrap: wrap;
+    position: relative;
     
 
 }
@@ -836,12 +899,13 @@ img{
     margin-right: 30px;
 
     margin-bottom: 30px;
+    position: relative;
      
    
 }
 
 
-.portfolio-links:hover{
+.portfolio-links:hover, .portfolio-links:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16)
@@ -852,7 +916,7 @@ img{
     display: block;
 }
 
-.flex-element:nth-last-child(-n+3){
+.flex-element-:nth-last-child(-n+3){
     margin-bottom: 0;
 }
 
@@ -862,10 +926,43 @@ img{
 }
 
 
+.card-overlay{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+    
+    letter-spacing: 0.03em;
+    position: absolute;
+    color: red;
+    opacity: 0.5;
+    
+}
+
+
+
+.product-thumb::before{
+    display: inline-block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 73%;
+    background-color: rgba(33, 150, 243, 0.9);
+    opacity: 0;
+    
+}
+
+.product-thumb:hover::before, .card-overlay:hover{
+    opacity: 1;
+}
+
+
 .portfolio-img-text{
 border-bottom: 1px solid #EEEEEE;
-border-left:  1px solid #EEEEEE;
-border-right: 1px solid #EEEEEE;;
+border-left:   1px solid #EEEEEE;
+border-right:  1px solid #EEEEEE;;
 margin: 0;
 
 padding-top: 20px;
