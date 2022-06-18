@@ -141,10 +141,29 @@ header{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    position: relative;
 }
 
 .site-nav .link.current{
     color: #2196F3;
+}
+
+.current::after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #2196F3;
+    margin-top:28px;
+    border-radius: 2px;
+
+
+
 }
 
 .site-nav .link:hover,
@@ -162,6 +181,9 @@ header{
     letter-spacing: 0.02em;
     display: flex;
     align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -258,9 +280,24 @@ header{
 
 
 .vector{
-    fill: red;
+    
 
 
+}
+
+
+.modal-close{
+    background-color: #FFFFFF;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 8px;
+    margin-top: 8px;
+    width: 30px;
+    height: 30px;
 }
 
 .backdrop.is-hidden{
@@ -476,6 +513,9 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-property: background-color, fill, border-radius;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links:hover, .social-links:focus{
@@ -612,6 +652,9 @@ header{
     align-items: center;
     justify-content: center;
     color: #AFB1B8;
+    transition-property: border-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -753,6 +796,9 @@ footer .logo{
 .join-link{
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -824,6 +870,9 @@ img{
     letter-spacing: 0.03em;
     border: 0;
     color: #212121;
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -914,6 +963,9 @@ img{
 
 .portfolio-links{
     display: block;
+    transition: box-shadow, opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .flex-element-:nth-last-child(-n+3){
@@ -928,35 +980,42 @@ img{
 
 .card-overlay{
     font-family: 'Roboto';
+    display: block;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
     /* or 156% */
-    
-    letter-spacing: 0.03em;
-    position: absolute;
-    color: red;
-    opacity: 0;
-    
-}
-
-
-
-.product-thumb::before{
-    display: inline-block;
-    position: absolute;
-    content: "";
     width: 100%;
     height: 73%;
-    background-color: rgba(33, 150, 243, 0.9);
+    letter-spacing: 0.03em;
+    position: absolute;
+    background-color: rgba(33, 150, 243, 0.9);;
+    color: #FFFFFF;
     opacity: 0;
+    transform-origin: bottom;
+    transform: scaleY(0);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    
     
 }
 
-.product-thumb:hover::before, .card-overlay:hover{
-    opacity: 1;
+
+.overlay-text{
+    display: block;
+    padding-top: 63px;
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-bottom: 63px;
 }
+.portfolio-links:hover .card-overlay, .portfolio-links:focus .card-overlay{
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+
+
 
 
 .portfolio-img-text{
