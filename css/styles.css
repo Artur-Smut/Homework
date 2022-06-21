@@ -142,7 +142,7 @@ header{
     line-height: 1.14;
     letter-spacing: 0.02em;
     transition-property: color;
-    transition-duration: 250ms;
+    transition-duration: 2500ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     position: relative;
@@ -308,26 +308,65 @@ header{
     width: 100%;
     height: 100%;
     padding-left: 30px;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
 
-.checkbox-label{
-    text-align: right;
-}
+
 
 .modal-input:focus-visible{
     border-color: #2196F3;
     outline: 0;
 }
 
-.policy-link{
-    color: #2196F3;
-    text-decoration:underline;
+
+
+
+
+
+
+
+
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
     
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-right: 0;
+    margin-left: 15px;
+
+
 }
 
-.policy-accept{
+
+.icon-check {
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    display: block;
+    border-radius: 2px;
+    margin-right: 7px;
+
+}
+
+
+
+.checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: absolute;
+}
+
+
+.check-text{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -338,50 +377,28 @@ header{
     letter-spacing: 0.03em;
     
     color: #757575;
-    
-    margin-bottom: 30px;
-    margin-top: 20px;
-    width: 100%;
-    
-    
-   
-
-    
 }
 
-.checkbox-svg{
-    fill: red;
-    display: block;
-    border: 1px solid tomato;
-    position: absolute;
-    left: 75px;
-    bottom: 120px;
-    
-}
+.checkbox:checked+.icon-check {
+    background-image: url('../img/icon-check.svg');
+    background-color: #2196F3;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-origin: border-box;
+    border-color: #2196F3;
 
-.check-box{
-    display: block;
-    position: absolute;
-    left: 52px;
-    bottom: 124px;
-    background-image: url(../img/checkbox-none.svg);
-    width: 16px;
-    height: 15px;
 }
 
 
-.check-text{
-    
+.policy-link {
+    text-decoration: underline;
+    text-decoration-color: #2196F3;
+    color: #2196F3;
 }
 
 
-.checkbox-input{
-    
-    -webkit-appearance: none;
-    appearance: none;
-    -moz-appearance: none;
-    position: absolute;
-}
+
 
 .textarea{
     
@@ -394,6 +411,9 @@ header{
     border-radius: 4px;
     margin-top: 4px;
     position: relative;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .textarea:focus-visible {
@@ -503,15 +523,13 @@ label{
     transform: translateY(-50%);
     right: 0;
     left: 15px;
-    
+    transition: fill 250ms  cubic-bezier(0.4, 0, 0.2, 1);
     
 
 }
 
 
-.span-icon{
-    padding-left: 15px;
-}
+
 
 .modal-input:focus-visible ~ .icon{
     fill: #2196F3;
