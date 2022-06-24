@@ -16,29 +16,29 @@
 <body>
     
 
-<header class="head">
+<header class="page-header">
     <nav class="container main-nav" >
         <a class="logo" href="/">Web<span class="logo-stu">Studio</span></a>
         
         
-        <ul class="site-nav list">
-            <li class="item"><a class="link" href="./index.html">Студия</a></li>
-            <li class="item"><a class="link current" href="/">Потрфолио</a></li>
-            <li class="item"><a class="link" href="/Контакты">Контакты</a></li>
+        <ul class="site-nav">
+            <li class="site-nav__item"><a class="site-nav__link" href="./index.html">Студия</a></li>
+            <li class="site-nav__item"><a class="site-nav__link site-nav__link--current" href="/">Портфолио</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="/Контакты">Контакты</a></li>
         </ul>
         
         <ul class="contacts">
             <li>
-                <a class="link-mt mail" href="mailto:info@devstudio.com">
-                    <svg class="button-icon">
+                <a class="contacts__link" href="mailto:info@devstudio.com">
+                    <svg class="contacts__icon">
                         <use href="./img/symbol-defs.svg#envelope"></use>
                     </svg>
                     info@devstudio.com</a>
             </li>
         
             <li>
-                <a class="link-mt tel" href="tel:+380961111111">
-                    <svg class="button-icon">
+                <a class="contacts__link" href="tel:+380961111111">
+                    <svg class="contacts__icon">
                         <use href="./img/symbol-defs.svg#smartphone"></use>
                     </svg>
                     +38 096 111 11 11</a>
@@ -57,20 +57,20 @@
           <h1 class="visually-hidden">Наше портфолио</h1>
     
     
-        <ul class="flex-container-btn">
-            <li class="flex-btn-element"><button class="portfolio-btn" type="button">Все</button></li>
-            <li class="flex-btn-element"><button class="portfolio-btn" type="button">Веб сайты</span></button></li>
-            <li class="flex-btn-element"><button class="portfolio-btn" type="button">Приложения</span></button></li>
-            <li class="flex-btn-element"><button class="portfolio-btn" type="button">Дизайн</span></button></li>
-            <li class="flex-btn-element"><button class="portfolio-btn" type="button">Маркетинг</span></button></li>
+        <ul class="filter">
+            <li class="filter__element"><button class="filter__button" type="button">Все</button></li>
+            <li class="filter__element"><button class="filter__button" type="button">Веб сайты</span></button></li>
+            <li class="filter__element"><button class="filter__button" type="button">Приложения</span></button></li>
+            <li class="filter__element"><button class="filter__button" type="button">Дизайн</span></button></li>
+            <li class="filter__element"><button class="filter__button" type="button">Маркетинг</span></button></li>
     
         </ul>
    
         
-            <ul class="flex-container ">
-                <li class="flex-element ">
-                    <a class="portfolio-links product-thumb" href="">
-                        <div class="card-overlay">
+            <ul class="flex-container portfolio-projects">
+                <li class="portfolio-objects__element">
+                    <a class="portfolio-objects_link" href="">
+                        <div class="porfolio-objects__overlay">
                         <span class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</span>
                         
@@ -79,129 +79,129 @@
                     <img src="./img/techno1.jpg" alt="Технокряк" width="370">
                 
                     
-                    <div class="portfolio-img-text">
-                        <h2 class="port-title">Технокряк</h2>
-                        <p class="port-li-p">Веб-сайт</p>
+                    <div class="portfolio-objects__text">
+                        <h2 class="portfolio-objects__title">Технокряк</h2>
+                        <p class="portfolio-objects__describe">Веб-сайт</p>
                     </div>
                  </a>
                 </li>
-                <li class="flex-element">
-                    <a class="portfolio-links" href="">
-                        <div class="card-overlay">
+                <li class="portfolio-objects__element">
+                    <a class="portfolio-objects_link" href="">
+                        <div class="porfolio-objects__overlay">
                             <span class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                 позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</span>
                         </div>
                     <img src="./img/basket2.jpg" alt="Баскетбольний постер" width="370">
-                    <div class="portfolio-img-text">
-                        <h2 class="port-title">Постер New Orlean vs Golden Star</h2>
-                        <p class="port-li-p">Дизайн</p>
+                    <div class="portfolio-objects__text">
+                        <h2 class="portfolio-objects__title">Постер New Orlean vs Golden Star</h2>
+                        <p class="portfolio-objects__describe">Дизайн</p>
                     </div>
                    </a>
                    
                 </li>
-                <li class="flex-element">
-                    <a class="portfolio-links" href="">
-                        <div class="card-overlay">
+                <li class="portfolio-objects__element">
+                    <a class="portfolio-objects_link" href="">
+                        <div class="porfolio-objects__overlay">
 
                             <span class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                 позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</span>
                         </div>
                     <img src="./img/seafood3.jpg" alt="Приложение seafood" width="370">
-                    <div class="portfolio-img-text">
-                        <h2 class="port-title">Ресторан Seafood</h2>
-                        <p class="port-li-p">Приложение</p>
+                    <div class="portfolio-objects__text">
+                        <h2 class="portfolio-objects__title">Ресторан Seafood</h2>
+                        <p class="portfolio-objects__describe">Приложение</p>
                     </div>
                    </a>
                 </li>
-                <li class="flex-element">
-                    <a class="portfolio-links" href="">
-                        <div class="card-overlay">
+                <li class="portfolio-objects__element">
+                    <a class="portfolio-objects_link" href="">
+                        <div class="porfolio-objects__overlay">
                             <span class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                 позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</span>
                         </div>
                     <img src="./img/prime4.jpg" alt="Проект Prime" width="370">
                    
-                        <div class="portfolio-img-text">
-                            <h2 class="port-title">Проект Prime</h2>
-                            <p class="port-li-p">Маркетинг</p>
+                        <div class="portfolio-objects__text">
+                            <h2 class="portfolio-objects__title">Проект Prime</h2>
+                            <p class="portfolio-objects__describe">Маркетинг</p>
                         </div>
                     </a>
                 </li>
-                <li class="flex-element">
-                    <a class="portfolio-links" href="">
-                        <div class="card-overlay">
+                <li class="portfolio-objects__element">
+                    <a class="portfolio-objects_link" href="">
+                        <div class="porfolio-objects__overlay">
                             <span class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                 позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</span>
                         </div>
                     <img src="./img/boxes5.jpg" alt="Приложение Boxes" width="370">
                   
-                        <div class="portfolio-img-text">
-                            <h2 class="port-title">Проект Boxes</h2>
-                            <p class="port-li-p">Приложение</p>
+                        <div class="portfolio-objects__text">
+                            <h2 class="portfolio-objects__title">Проект Boxes</h2>
+                            <p class="portfolio-objects__describe">Приложение</p>
                         </div>
                   </a>
                 </li>
-                <li class="flex-element">
-                    <a class="portfolio-links" href="">
-                        <div class="card-overlay">
+                <li class="portfolio-objects__element">
+                    <a class="portfolio-objects_link" href="">
+                        <div class="porfolio-objects__overlay">
                             <span class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                 позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</span>
                         </div>
                     <img src="./img/inspiration6.jpg" alt="Сайт" width="370">
                    
-                        <div class="portfolio-img-text">
-                            <h2 class="port-title">Inspiration has no Borders</h2>
-                            <p class="port-li-p">Веб-сайт</p>
+                        <div class="portfolio-objects__text">
+                            <h2 class="portfolio-objects__title">Inspiration has no Borders</h2>
+                            <p class="portfolio-objects__describe">Веб-сайт</p>
                         </div>
                    </a>
                 </li>
-                <li class="flex-element">
-                    <a class="portfolio-links" href="">
-                        <div class="card-overlay">
+                <li class="portfolio-objects__element">
+                    <a class="portfolio-objects_link" href="">
+                        <div class="porfolio-objects__overlay">
                             <span class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                 позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</span>
                         </div>
                     <img src="./img/limited7.jpg" alt="Издание Limited Edition" width="370">
                   
-                        <div class="portfolio-img-text">
-                            <h2 class="port-title">Издание Limited Edition</h2>
-                            <p class="port-li-p">Дизайн</p>
+                        <div class="portfolio-objects__text">
+                            <h2 class="portfolio-objects__title">Издание Limited Edition</h2>
+                            <p class="portfolio-objects__describe">Дизайн</p>
                         </div>
                    </a>
                 </li>
-                <li class="flex-element">
-                    <a class="portfolio-links" href="">
-                        <div class="card-overlay">
+                <li class="portfolio-objects__element">
+                    <a class="portfolio-objects_link" href="">
+                        <div class="porfolio-objects__overlay">
                             <span class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                 позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</span>
                         </div>
                     <img src="./img/lab8.jpg" alt="Проект LAB" width="370">
                     
-                        <div class="portfolio-img-text">
-                            <h2 class="port-title">Проект LAB</h2>
-                            <p class="port-li-p">Маркетинг</p>
+                        <div class="portfolio-objects__text">
+                            <h2 class="portfolio-objects__title">Проект LAB</h2>
+                            <p class="portfolio-objects__describe">Маркетинг</p>
                         </div>
                     </a>
                 </li>
-                <li class="flex-element">
-                    <a class="portfolio-links" href="">
-                        <div class="card-overlay">
+                <li class="portfolio-objects__element">
+                    <a class="portfolio-objects_link" href="">
+                        <div class="porfolio-objects__overlay">
                             <span class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                 позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</span>
                         </div>
                     <img src="./img/growing9.jpg" alt="  Приложение Growing Business" width="370">
                    
-                    <div class="portfolio-img-text">
-                        <h2 class="port-title">Growing Business</h2>
-                        <p class="port-li-p">Приложение</p>
+                    <div class="portfolio-objects__text">
+                        <h2 class="portfolio-objects__title">Growing Business</h2>
+                        <p class="portfolio-objects__describe">Приложение</p>
                     </div>
                    </a>
                 </li>
