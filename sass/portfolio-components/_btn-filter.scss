@@ -1,0 +1,42 @@
+.filter__button {
+    background-color: #F5F4FA;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    border-radius: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+
+    letter-spacing: 0.03em;
+    border: 0;
+    color: #212121;
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover , &:focus{
+        background-color: $accentColor;
+        color: #FFFFFF;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.filter{
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    @include centeredFlex;
+    
+    &__element{
+        margin-right: 8px;
+    }
+
+    &__element:nth-child(5){
+        margin-right: 0;
+    }
+}

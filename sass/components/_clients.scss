@@ -1,0 +1,60 @@
+.our-clients {
+    background-color: #FFFFFF;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-logo {
+    fill: currentColor;
+}
+
+.clients{
+    &-title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: $mainColor;
+        margin: 0;
+    }
+    
+    &-list {
+        @include centeredFlex;
+    
+        margin-top: 50px;
+    }
+    
+    &-links {
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #AFB1B8;
+        transition-property: border-color,
+            color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    &-links:hover,
+    &-links:focus {
+        border-color: $accentColor;
+        color: $accentColor;
+    }
+}
+
+.clients-item{
+    width: 170px;
+    height: 92px;
+
+    &:not(:first-child){
+        margin-left: 40px;
+    }
+}

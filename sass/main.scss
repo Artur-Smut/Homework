@@ -1,10 +1,55 @@
-@import './utils/variables'
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/placeholders';
+@import
+'./components/page-header' , 
+'./components/hero-section' , 
+'./components/logo-header' , 
+'./components/logo-footer' , 
+'./components/features' , 
+'./components/what-doing' , 
+'./components/clients' , 
+'./components/page-footer' ,
+'./components/team' ,
+'./portfolio-components/btn-filter' ,
+'./portfolio-components/portfolio-cards';
 
 
-.container{
-    background-color: $accentcolor;
+
+html {
+    box-sizing: border-box;
 }
 
-.section{
-    color: $accentcolor;
+
+
+a{
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    display: block;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
+
+.container {
+   @extend %container;
+}
+
+.visually-hidden{
+   @extend %visually-hidden;
 }

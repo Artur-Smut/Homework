@@ -1,0 +1,64 @@
+.features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+    & h2{
+        margin-top: 0;
+    }
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    
+    .feature-item{
+        width: 270px;
+        
+        &+ .feature-item{
+           margin-left: 30px;
+        }
+    }
+}
+
+.feature-item::before{
+    display: block;
+    content: '';
+    height: 120px;
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+$icons: "antenna","clock", "diagram", "astronaut";
+
+@each $iconName in $icons {
+    .icon-#{$iconName}::before {
+        background-image: url("../../img/#{$iconName}.svg");
+    }
+
+}
+
+.text-features{
+    color: $secondaryColor;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.title-features{
+    color: $mainColor;
+
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}

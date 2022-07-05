@@ -93,21 +93,17 @@ header{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-
-
 }
 
 .container{
     margin-left: auto;
     margin-right: auto;
-    /* outline: 2px solid tomato; */
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
 }
 
 .site-nav .site-nav__item{
-    /* outline: 1px solid tomato; */
     margin-right: 50px;
 }
 
@@ -142,7 +138,7 @@ header{
     line-height: 1.14;
     letter-spacing: 0.02em;
     transition-property: color;
-    transition-duration: 2500ms;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     position: relative;
@@ -181,6 +177,7 @@ header{
     letter-spacing: 0.02em;
     display: flex;
     align-items: center;
+    justify-content: center;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -219,14 +216,6 @@ header{
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    
-    
-    
-   
-    
-
-    
-
     
 }
 
@@ -605,23 +594,23 @@ label{
 }
 
 .icon-antenna::before{
-    background-image: url(../img/antenna\ 1.svg);
+    background-image: url(../img/antenna.svg);
     
 
 }
 
 
 .icon-clock::before{
-    background-image: url(../img/clock\ 1.svg);
+    background-image: url(../img/clock.svg);
 }
 
 
 .icon-diagram::before{
-    background-image:url(../img/diagram\ 1.svg);
+    background-image:url(../img/diagram.svg);
 }
 
 .icon-astronaut::before{
-    background-image: url(../img/astronaut\ 1.svg);
+    background-image: url(../img/astronaut.svg);
 }
 
 
@@ -726,9 +715,10 @@ label{
 
 
 .team-social{
-     background-color: #fff;
+    background-color: #fff;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .social-item{
@@ -877,6 +867,7 @@ label{
     display: flex;
     align-items: center;
     margin-top: 50px;
+    justify-content: center;
     
 }
 
@@ -903,7 +894,7 @@ label{
 
 
 .clients-item:not(:first-child){
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 .clients-item{
@@ -1009,7 +1000,7 @@ footer .logo{
     display: flex;
     align-items: center;
     margin: 0;
-    
+    justify-content: center;
 
 }
 
@@ -1137,12 +1128,14 @@ footer .logo{
     display: flex;
     align-items: center;
     margin-left: 93px;
+    justify-content: center;
 }
 
 .subscribe-input{
     margin-top: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 
@@ -1206,6 +1199,7 @@ img{
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 50px;
+    align-items: center;
 }
 
 .filter__element{
@@ -1264,6 +1258,12 @@ img{
 
 }
 
+.flex-container-portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
 .portfolio-objects__element{
     width: 370px;
     
@@ -1276,14 +1276,14 @@ img{
 }
 
 
-.portfolio-objects_link:hover, .portfolio-objects_link:focus{
+.portfolio-objects__link:hover, .portfolio-objects__link:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16)
 }
 
 
-.portfolio-objects_link{
+.portfolio-objects__link{
     display: block;
     transition: box-shadow, opacity;
     transition-duration: 250ms;
@@ -1339,7 +1339,7 @@ img{
     margin-right: 24px;
     padding-bottom: 63px;
 }
-.portfolio-objects_link:hover .porfolio-objects__overlay, .portfolio-objects_link:focus .porfolio-objects__overlay{
+.portfolio-objects__link:hover .porfolio-objects__overlay, .portfolio-objects__link:focus .porfolio-objects__overlay{
     opacity: 1;
     transform: scaleY(1);
 }
