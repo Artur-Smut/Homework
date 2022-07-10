@@ -1,8 +1,19 @@
 .foot {
     background-color: #2F303A;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    height: 252px;
+    
+    @media screen and (min-width:1100px) {
+        padding-top: 60px;
+    }
+
+    position: relative;
+    @media screen and (min-width:768px) {
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width:1100px) {
+        padding-bottom: 0;
+    }
+    
 }
 
 .address-foot {
@@ -19,10 +30,36 @@
     letter-spacing: 0.03em;
 
     color: #FFFFFF;
+    @media screen and (min-width:768px) {
+        margin-left: 76px;
+    }
+
+    @media screen and (min-width:1100px) {
+        margin-left: 0;
+    }
 }
 
 address{
     font-style: normal;
+    
+   
+
+    @media screen and (min-width:1100px) {
+        margin-left: 0;
+    }
+    
+}
+
+.footer-data-mb{
+    
+    @media screen and (min-width:768px) {
+        margin-left: 115px;
+        width: 232px;
+    }
+    
+    @media screen and (min-width:1100px) {
+        margin-left: 0;
+    }
 }
 
 .data-foot {
@@ -37,11 +74,7 @@ address{
     color: rgba(255, 255, 255, 0.6);
 }
 
-footer .logo {
-    display: inline-block;
-    margin-right: 0;
-    margin-bottom: 20px;
-}
+
 
 .data-foot-tel {
     margin-bottom: 60px;
@@ -49,8 +82,14 @@ footer .logo {
 }
 
 .foot-container {
-    display: flex;
-    align-items: baseline;
+    @media screen and (min-width:1100px) {
+        display: flex;
+        align-items: baseline;
+    }
+
+    @media screen and (max-width:767px) {
+        text-align: center;
+    }
 }
 
 .foot-stu {
@@ -61,8 +100,18 @@ footer .logo {
     margin-bottom: 9px;
 }
 
+.footer-data-mb:not(:first-child) {
+    margin-bottom: 60px;
+}
+
 .join {
-    margin-left: 70px;
+    @media screen and(min-width:1100px) {
+        margin-left: 70px;
+    }
+
+    @media screen and(max-width:767px) {
+        margin-left: 0;
+    }
 
     &-title{
         font-family: 'Roboto';
@@ -76,11 +125,33 @@ footer .logo {
         color: #FFFFFF;
         margin: 0;
         margin-bottom: 20px;
+
+        @media screen and (min-width:768px) {
+            position: absolute;
+            top: 65px;
+            right: 119px;    
+        }
+
+        @media  screen and (min-width:1100px) {
+            position: static;
+        }
+        
+        
     }
 
     &-us{
         margin: 0;
         @include centeredFlex;
+        margin-bottom: 60px;
+        @media screen and (min-width:768px) {
+            top: 101px;
+            right: 89px;
+            position: absolute;
+        }
+
+        @media screen and (min-width:1100px) {
+            position: static;
+        }
     }
 
     &-link{
@@ -115,9 +186,17 @@ footer .logo {
 }
 
 .subscribe{
+    
+    @media screen and (min-width:768px) {
+        text-align: center;
+    }
 
-    margin-left: 93px;
-    @include centeredFlex;
+    @media screen and (min-width:1100px) {
+        margin-left: 93px;
+        @include centeredFlex;
+        text-align: start;
+    }
+    
 
     &-text{
         font-family: 'Roboto';
@@ -140,15 +219,17 @@ footer .logo {
         padding-right: 33px;
         display: flex;
         align-items: center;
-        
+
         background-color: $accentColor;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
         line-height: 18px;
+
+        margin: 0;
+
         
-        position: relative;
         border: 0;
         letter-spacing: 0.06em;
         
@@ -158,11 +239,30 @@ footer .logo {
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         cursor: pointer;
+
+        @media screen and (max-width:767px) {
+            margin: 0 auto;
+            margin-top: 20px;
+            
+        }
+
+        @media screen and (min-width:768px) {
+            margin: 0 auto;
+            margin-top: 30px;
+        
+        }
+
+        @media screen and (min-width:1100px) {
+            margin-top: 0;
+        }
     }
 
     &-input{
         margin-top: 20px;
-        @include centeredFlex;
+        @media screen and (min-width:1100px) {
+            
+            @include centeredFlex;
+        }
     }
 }
 
@@ -171,7 +271,12 @@ footer .logo {
     
     height: 50px;
     width: 358px;
-    margin-right: 12px;
+    
+    @media screen and (min-width:1100px) {
+    
+        margin-right: 12px;
+    }
+    
     background-color: inherit;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));

@@ -10,16 +10,6 @@
 }
 
 @mixin overlay () {
-    max-width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-        ),
-    url("../img/hero-image.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+ 
 }
+

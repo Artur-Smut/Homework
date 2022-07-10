@@ -1,0 +1,157 @@
+.menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    z-index: 2;
+    background-color: transparent;
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+
+    position: absolute;
+    right: 23px;
+
+    .icon-close{
+        display: none;
+    }
+
+    &.is-open .icon-close{
+        display: block;
+    }
+
+    &.is-open .icon-menu {
+        display: none;
+    }
+    
+}
+
+.icon-close:hover{
+    fill: $accentColor;
+}
+
+.icon-menu:hover{
+    fill: $accentColor;
+}
+
+.mobile-menu__contacts--tel{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    
+    letter-spacing: 0.02em;
+    
+    color: $accentColor;
+
+    margin-top: 302px;
+    margin-bottom: 32px;
+
+    display: block;
+    
+}
+
+.mobile-menu__contacts--mail{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    
+    color: $secondaryColor;
+    display: block;
+}
+
+
+.mobile-menu__social{
+    display: flex;
+    margin-top: 64px;
+}
+
+.mobile-menu__social--links{
+   margin-right: 10px;
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 22px;
+
+
+   letter-spacing: 0.02em;
+
+   color: $accentColor;
+   
+   
+   
+}
+
+.mobile-menu__social--links:not(:last-child){
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+}
+
+
+
+.mobile-menu__item{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+
+    display: block;
+    
+    color: $mainColor;
+
+    &:hover , &:focus{
+        color: $accentColor;
+    }
+
+    &:not(:last-child){
+        margin-bottom: 32px;
+    }
+
+    &:first-child {
+        margin-top: 46px;
+    }
+
+    color: $mainColor;
+    
+    
+}
+
+a{
+    color: inherit;
+}
+
+
+
+
+
+
+
+
+
+.menu-container{
+    display: none;
+    top: 0;
+    width: 100%;
+    height: 796px;
+    left: 0;
+    padding-left: 40px;
+    background-color: #fff;
+    position: absolute;
+    @media screen and (min-width:481px) {
+        display: none;
+    }
+    
+    z-index: 1;
+
+    &.is-open{
+        display: block;
+    }
+}

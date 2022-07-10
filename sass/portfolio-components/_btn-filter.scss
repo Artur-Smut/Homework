@@ -29,9 +29,33 @@
 
 .filter{
     margin-bottom: 50px;
-    flex-wrap: wrap;
-    @include centeredFlex;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 60px;
+        margin-left: 64px;
+    }
     
+    
+    @media screen and (min-width:1100px) {
+        flex-wrap: wrap;
+        @include centeredFlex;
+    }
+
+    @media screen and (max-width:480px) {
+        display: flex;
+        flex-wrap: wrap;    
+
+        &__element:nth-child(5) {
+            margin-top: 15px;
+        }
+
+        &__element:nth-child(4) {
+            margin-top: 15px;
+        }
+    }
+
     &__element{
         margin-right: 8px;
     }
@@ -39,4 +63,6 @@
     &__element:nth-child(5){
         margin-right: 0;
     }
+
+
 }

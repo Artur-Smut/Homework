@@ -14,43 +14,114 @@
 <body>
     
 
-<header class="page-header">
-    <nav class="container main-nav" >
-        <a class="logo" href="/">Web<span class="logo__studio">Studio</span></a>
+        <header class="page-header">
+            <div class="header-container">
+                <nav class="main-nav">
+                    <a class="logo" href="/">Web<span class="logo__studio">Studio</span></a>
         
         
-        <ul class="site-nav">
-            <li class="site-nav__item"><a class="site-nav__link" href="./index.html">Студия</a></li>
-            <li class="site-nav__item"><a class="site-nav__link site-nav__link--current" href="/">Портфолио</a></li>
-            <li class="site-nav__item"><a class="site-nav__link" href="/Контакты">Контакты</a></li>
-        </ul>
+                    <ul class="site-nav">
+                        <li class="site-nav__item"><a class="site-nav__link " href="./index.html">Студия</a></li>
+                        <li class="site-nav__item"><a class="site-nav__link site-nav__link--current" href="./portfolio.html">Портфолио</a></li>
+                        <li class="site-nav__item"><a class="site-nav__link" href="/">Контакты</a></li>
         
-        <ul class="contacts">
-            <li>
-                <a class="contacts__link" href="mailto:info@devstudio.com">
-                    <svg class="contacts__icon">
-                        <use href="./img/symbol-defs.svg#envelope"></use>
-                    </svg>
-                    info@devstudio.com</a>
-            </li>
+                    </ul>
         
-            <li>
-                <a class="contacts__link" href="tel:+380961111111">
-                    <svg class="contacts__icon">
-                        <use href="./img/symbol-defs.svg#smartphone"></use>
-                    </svg>
-                    +38 096 111 11 11</a>
-            </li>
-        </ul>
-
-    </nav>
         
-</header>
+                    <button type="button" class="menu-button" data-menu-button aria-expanded="false"
+                        aria-controls="menu-container">
+                        <svg aria-label="Переключатель мобильного меню" width="40px" height="40px">
+                            <use class="icon-menu" href="./img/menu-phone.svg#icon-menu">
+        
+                            </use>
+        
+        
+                            <use class="icon-close" href="./img/menu-phone.svg#icon-close">
+        
+                            </use>
+                        </svg>
+                    </button>
+                    <div class="menu-container" id="menu-container" data-menu>
+                        <ul>
+                            <li class="mobile-menu__item">
+                                <a href="/">Студия</a>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <a href="./portfolio.html">Портфолио</a>
+                            </li>
+                            <li class="mobile-menu__item">Контакты</li>
+                        </ul>
+        
+                        <ul class="mobile-menu__contacts">
+                            <li>
+                                <a class="mobile-menu__contacts-item mobile-menu__contacts--tel" href="tel:+38 096 111 11 11">
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                            <li>
+                                <a class="mobile-menu__contacts-item mobile-menu__contacts--mail"
+                                    href="mailto:info@devstudio.com">
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                        </ul>
+        
+                        <ul class="mobile-menu__social">
+                            <li class="mobile-menu__social--links">
+                                <a href="">
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="mobile-menu__social--links">
+                                <a href="">
+                                    Twitter
+                                </a>
+                            </li>
+                            <li class="mobile-menu__social--links">
+                                <a href="">
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="mobile-menu__social--links">
+                                <a href="">
+                                    LinkedIn
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+        
+                </nav>
+        
+                <ul class="contacts">
+                    <li>
+                        <a class="contacts__link" href="mailto:info@devstudio.com">
+                            <svg class="contacts__icon">
+                                <use href="./img/symbol-defs.svg#envelope"></use>
+                            </svg>
+                            info@devstudio.com</a>
+                    </li>
+        
+                    <li>
+                        <a class="contacts__link" href="tel:+380961111111">
+                            <svg class="contacts__icon">
+                                <use href="./img/symbol-defs.svg#smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
+                    </li>
+                </ul>
+        
+        
+        
+        
+            </div>
+        
+        
+        </header>
 
 
 <main>
 
-<section class="section">
+<section class="section-portfolio">
       <div class="container">
           <h1 class="visually-hidden">Наше портфолио</h1>
     
@@ -74,10 +145,10 @@
                         
                         </div>
                         
-                    <img src="./img/techno1.jpg" alt="Технокряк" width="370">
+                    <img class="portfolio-object" srcset="" src="./img/techno1.jpg" alt="Технокряк" >
                 
                     
-                    <div class="portfolio-objects__text">
+                    <div class="portfolio-objects__text portfolio-objects__text--1">
                         <h2 class="portfolio-objects__title">Технокряк</h2>
                         <p class="portfolio-objects__describe">Веб-сайт</p>
                     </div>
@@ -90,7 +161,7 @@
                                 позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</span>
                         </div>
-                    <img src="./img/basket2.jpg" alt="Баскетбольний постер" width="370">
+                    <img class="portfolio-object" src="./img/basket2.jpg" alt="Баскетбольний постер" >
                     <div class="portfolio-objects__text">
                         <h2 class="portfolio-objects__title">Постер New Orlean vs Golden Star</h2>
                         <p class="portfolio-objects__describe">Дизайн</p>
@@ -106,7 +177,7 @@
                                 позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</span>
                         </div>
-                    <img src="./img/seafood3.jpg" alt="Приложение seafood" width="370">
+                    <img class="portfolio-object" src="./img/seafood3.jpg" alt="Приложение seafood" >
                     <div class="portfolio-objects__text">
                         <h2 class="portfolio-objects__title">Ресторан Seafood</h2>
                         <p class="portfolio-objects__describe">Приложение</p>
@@ -120,7 +191,7 @@
                                 позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</span>
                         </div>
-                    <img src="./img/prime4.jpg" alt="Проект Prime" width="370">
+                    <img class="portfolio-object" src="./img/prime4.jpg" alt="Проект Prime" >
                    
                         <div class="portfolio-objects__text">
                             <h2 class="portfolio-objects__title">Проект Prime</h2>
@@ -135,7 +206,7 @@
                                 позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</span>
                         </div>
-                    <img src="./img/boxes5.jpg" alt="Приложение Boxes" width="370">
+                    <img class="portfolio-object" src="./img/boxes5.jpg" alt="Приложение Boxes" >
                   
                         <div class="portfolio-objects__text">
                             <h2 class="portfolio-objects__title">Проект Boxes</h2>
@@ -150,7 +221,7 @@
                                 позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</span>
                         </div>
-                    <img src="./img/inspiration6.jpg" alt="Сайт" width="370">
+                    <img class="portfolio-object" src="./img/inspiration6.jpg" alt="Сайт" >
                    
                         <div class="portfolio-objects__text">
                             <h2 class="portfolio-objects__title">Inspiration has no Borders</h2>
@@ -165,7 +236,7 @@
                                 позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</span>
                         </div>
-                    <img src="./img/limited7.jpg" alt="Издание Limited Edition" width="370">
+                    <img class="portfolio-object" src="./img/limited7.jpg" alt="Издание Limited Edition" >
                   
                         <div class="portfolio-objects__text">
                             <h2 class="portfolio-objects__title">Издание Limited Edition</h2>
@@ -180,7 +251,7 @@
                                 позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</span>
                         </div>
-                    <img src="./img/lab8.jpg" alt="Проект LAB" width="370">
+                    <img class="portfolio-object" src="./img/lab8.jpg" alt="Проект LAB" >
                     
                         <div class="portfolio-objects__text">
                             <h2 class="portfolio-objects__title">Проект LAB</h2>
@@ -195,7 +266,7 @@
                                 позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</span>
                         </div>
-                    <img src="./img/growing9.jpg" alt="  Приложение Growing Business" width="370">
+                    <img class="portfolio-object" src="./img/growing9.jpg" alt="  Приложение Growing Business" >
                    
                     <div class="portfolio-objects__text">
                         <h2 class="portfolio-objects__title">Growing Business</h2>
@@ -302,6 +373,6 @@
 
 
 </footer>
-
+    <script src="./js/menu.js"></script>
 </body>
 </html>

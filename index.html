@@ -17,8 +17,8 @@
 <body>
     
         <header class="page-header">
-            <div class="container header-container">
-               <nav class="  main-nav">
+            <div class="header-container">
+               <nav class="main-nav">
                <a class="logo" href="/">Web<span class="logo__studio">Studio</span></a>
 
 
@@ -28,8 +28,74 @@
                    <li class="site-nav__item"><a class="site-nav__link" href="/">Контакты</a></li>
 
                 </ul>
+                
 
+                <button 
+                type="button"
+                class="menu-button"
+                data-menu-button
+                aria-expanded="false"
+                aria-controls="menu-container"
+                    >
+                    <svg aria-label="Переключатель мобильного меню" width="40px" height="40px"  >
+                        <use class="icon-menu" href="./img/menu-phone.svg#icon-menu">
+                
+                        </use>
+                
+                
+                        <use class="icon-close" href="./img/menu-phone.svg#icon-close">
+                
+                        </use>
+                    </svg>
+                </button>
+                <div class="menu-container" id="menu-container" data-menu>
+                    <ul>
+                        <li class="mobile-menu__item"> 
+                            <a href="/">Студия</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a   href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="mobile-menu__item">Контакты</li>
+                    </ul>
 
+                    <ul class="mobile-menu__contacts">
+                        <li >
+                            <a class="mobile-menu__contacts-item mobile-menu__contacts--tel" href="tel:+38 096 111 11 11">
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                        <li>
+                            <a class="mobile-menu__contacts-item mobile-menu__contacts--mail" href="mailto:info@devstudio.com">
+                                info@devstudio.com
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="mobile-menu__social">
+                        <li class="mobile-menu__social--links">
+                            <a href="">
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="mobile-menu__social--links">
+                            <a href="">
+                                Twitter
+                            </a>
+                        </li>
+                        <li class="mobile-menu__social--links">
+                            <a href="">
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="mobile-menu__social--links">
+                            <a  href="">
+                                LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                  
                </nav>
 
                <ul class="contacts">
@@ -48,6 +114,9 @@
                         +38 096 111 11 11</a></li>
                </ul>
                
+               
+               
+
             </div>
             
         
@@ -216,7 +285,7 @@
                 <h2 class="team-title">Наша команда</h2>
                 <ul class="flex-container">
                     <li class="flex-element-team">
-                        <img src="./img/Igor.jpg" alt="Фото Игоря Демьяненко" width="270">
+                        <img  class="team-image" src="./img/Igor.jpg" alt="Фото Игоря Демьяненко" >
                      
                           <div class="team-description">
                                 <h3 class="team-name">Игорь Демьяненко</h3>
@@ -277,7 +346,7 @@
                     </li>
                 
                     <li class="flex-element-team">
-                        <img src="./img/Olga.jpg" alt="Фото Фото Ольги Репины" width="270">
+                        <img  class="team-image" src="./img/Olga.jpg" alt="Фото Фото Ольги Репины" >
                 
                     <div class="team-description">
                         <h3 class="team-name">Ольга Репина</h3>
@@ -336,7 +405,7 @@
                     </li>
                 
                     <li class="flex-element-team">
-                        <img src="./img/Kolia.jpg" alt="Фото Николая Тарасова" width="270">
+                        <img  class="team-image" src="./img/Kolia.jpg" alt="Фото Николая Тарасова" >
                 
                         <div class="team-description">
                             <h3 class="team-name">Николай Тарасов</h3>
@@ -395,7 +464,7 @@
                     </li>
                 
                     <li class="flex-element-team">
-                        <img src="./img/Misha.jpg" alt="Фото Михаила Ермакова" width="270">
+                        <img class="team-image" src="./img/Misha.jpg" alt="Фото Михаила Ермакова" >
                 
                         <div class="team-description">
                             <h3 class="team-name">Михаил Ермаков</h3>
@@ -534,7 +603,7 @@
                     
                     <address>
                         <p class="address-foot">г. Киев, пр-т Леси Украинки, 26 <br></p>
-                        <ul>
+                        <ul class="footer-data">
                             <li class="footer-data-mb"><a class="data-foot" href="mailto:info@example.com"> <span
                                         class="data-foot-mail">info@example.com</span>
                                 </a>
@@ -611,6 +680,7 @@
           
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

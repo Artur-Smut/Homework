@@ -23,11 +23,24 @@
         margin-bottom: 30px;
     }
     
+    &-section{
+        @media screen and (max-width: 1099px) {
+            display: none;
+        }
+    }
 }
 
 .flex-container{
     display: flex;
     position: relative;
+
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
+
+    @media screen and (min-width:768px) {
+        flex-wrap: wrap;
+    }
 }
 
 .overlay-doing{
@@ -51,4 +64,6 @@
     
     padding-top: 27px;
     align-items: center;
+
+   
 }

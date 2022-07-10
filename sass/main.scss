@@ -1,6 +1,7 @@
 @import './utils/variables';
 @import './utils/mixins';
 @import './utils/placeholders';
+
 @import
 './components/page-header' , 
 './components/hero-section' , 
@@ -12,9 +13,37 @@
 './components/page-footer' ,
 './components/team' ,
 './portfolio-components/btn-filter' ,
-'./portfolio-components/portfolio-cards';
+'./portfolio-components/portfolio-cards' , 
+'./components/mobile-nav';
 
 
+
+.container {
+
+    @media screen and (max-width: 767px) {
+        width: 480px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        
+    }
+    
+    @media screen and (min-width:768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
 
 html {
     box-sizing: border-box;
@@ -38,11 +67,28 @@ img{
 
 body {
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden ;
+
 }
 
+body.modal-open{
+    overflow: hidden;
+}
+
+
+
+
+
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+   @media screen and (min-width:1100px) {
+       padding-top: 94px;
+       padding-bottom: 94px;
+   }
+
+    @media screen and (max-width:480px) {
+       padding-bottom: 60px; 
+       padding-top: 60px;
+    }
 
 }
 

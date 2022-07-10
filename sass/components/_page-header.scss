@@ -2,6 +2,11 @@
     background-color: #fff;
     padding-top: 24px;
     padding-bottom: 24px;
+    height: 80px; 
+
+    @media screen and (max-width:480px) {
+        position: relative;
+    }
 }
 
 
@@ -16,24 +21,34 @@ header {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-}
-
-.container {
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+
+    @media screen and (min-width:1100px) {
+        width: 1200px;
+    }
+
 }
+
+
 
 .site-nav .site-nav__item {
     margin-right: 50px;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
 }
 
 
 .main-nav {
     display: flex;
     align-items: center;
+
+    
 }
 
 
@@ -103,13 +118,19 @@ header {
     &__link{
         color: $secondaryColor;
         
+        @media screen and (max-width:768px) {
+            width: 140px;
+            font-size: 12px;
+           
+        }
+        
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
         display: flex;
         align-items: center;
-        justify-content: center;
+        
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -117,17 +138,20 @@ header {
         .contacts &:hover , .contacts &:focus{
             color: $accentColor;
         }
+
             
     }
        
-    & :not(:first-child){
-        margin-left: 50px;
+    @media screen and (min-width:1100px) {
+        & :not(:first-child) {
+            margin-left: 50px;
+        }
     }
 
     &__icon{
         height: 12px;
         width: 16px;
-        margin-right: 10px;
+        margin-right: 8px;
         fill: currentColor;
 
         
@@ -135,6 +159,20 @@ header {
 
     &__icon:hover , &__icon:focus{
         fill: $accentColor;
+    }
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width:768px)  {
+        
+        flex-direction: column;
+    }
+
+    @media screen and (min-width:1100px) {
+    
+        flex-direction: row;
     }
 }
 
