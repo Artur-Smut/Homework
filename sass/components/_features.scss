@@ -99,7 +99,7 @@ $icons: "antenna","clock", "diagram", "astronaut";
 
 @each $iconName in $icons {
     .icon-#{$iconName}::before {
-        background-image: url("../../img/#{$iconName}.svg");
+        background-image: url("../img/#{$iconName}.svg");
     }
 
 
