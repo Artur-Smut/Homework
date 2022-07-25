@@ -1,7 +1,7 @@
 .foot {
     background-color: #2F303A;
     
-    @media screen and (min-width:1100px) {
+    @media screen and (min-width:1600px) {
         padding-top: 60px;
     }
 
@@ -10,9 +10,7 @@
         padding-bottom: 60px;
     }
 
-    @media screen and (min-width:1100px) {
-        padding-bottom: 0;
-    }
+    
     
 }
 
@@ -34,7 +32,7 @@
         margin-left: 76px;
     }
 
-    @media screen and (min-width:1100px) {
+    @media screen and (min-width:1600px) {
         margin-left: 0;
     }
 }
@@ -44,7 +42,7 @@ address{
     
    
 
-    @media screen and (min-width:1100px) {
+    @media screen and (min-width:1600px) {
         margin-left: 0;
     }
     
@@ -57,7 +55,7 @@ address{
         width: 232px;
     }
     
-    @media screen and (min-width:1100px) {
+    @media screen and (min-width:1600px) {
         margin-left: 0;
     }
 }
@@ -82,9 +80,10 @@ address{
 }
 
 .foot-container {
-    @media screen and (min-width:1100px) {
+    @media screen and (min-width:1600px) {
         display: flex;
-        align-items: baseline;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     @media screen and (max-width:767px) {
@@ -100,12 +99,10 @@ address{
     margin-bottom: 9px;
 }
 
-.footer-data-mb:not(:first-child) {
-    margin-bottom: 60px;
-}
+
 
 .join {
-    @media screen and(min-width:1100px) {
+    @media screen and(min-width:1600px) {
         margin-left: 70px;
     }
 
@@ -132,7 +129,7 @@ address{
             right: 119px;    
         }
 
-        @media  screen and (min-width:1100px) {
+        @media  screen and (min-width:1600px) {
             position: static;
         }
         
@@ -149,7 +146,7 @@ address{
             position: absolute;
         }
 
-        @media screen and (min-width:1100px) {
+        @media screen and (min-width:1600px) {
             position: static;
         }
     }
@@ -191,7 +188,7 @@ address{
         text-align: center;
     }
 
-    @media screen and (min-width:1100px) {
+    @media screen and (min-width:1600px) {
         margin-left: 93px;
         @include centeredFlex;
         text-align: start;
@@ -252,14 +249,14 @@ address{
         
         }
 
-        @media screen and (min-width:1100px) {
+        @media screen and (min-width:1600px) {
             margin-top: 0;
         }
     }
 
     &-input{
         margin-top: 20px;
-        @media screen and (min-width:1100px) {
+        @media screen and (min-width:1600px) {
             
             @include centeredFlex;
         }
@@ -272,7 +269,7 @@ address{
     height: 50px;
     width: 358px;
     
-    @media screen and (min-width:1100px) {
+    @media screen and (min-width:1600px) {
     
         margin-right: 12px;
     }
