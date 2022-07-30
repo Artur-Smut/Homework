@@ -146,6 +146,10 @@
         width: 450px;
     }
 
+    @media screen and (max-width:479px) {
+        width: 290px;
+    }
+
     padding: 40px;
     z-index: 3;
 
@@ -206,6 +210,10 @@
         @media screen and (max-width:767px) {
             width: 370px;
             height: 40px;
+        }
+
+        @media screen and (max-width:479px) {
+            width: 247px;
         }
         
         @media screen and (min-width:768px) {

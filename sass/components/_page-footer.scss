@@ -298,6 +298,10 @@ address{
     height: 50px;
     width: 358px;
     
+    @media screen and (max-width:479px) {
+        width: 320px;
+    }
+
     @media screen and (min-width:1600px) {
     
         margin-right: 12px;

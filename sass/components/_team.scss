@@ -16,6 +16,10 @@
             width: 450px;
         }
 
+        @media screen and (max-width:479px) {
+            width: 290px;
+        }
+
         @media screen and (min-width: 768px) {
             width: 354px;
         }
@@ -67,6 +71,10 @@
             width: 450px;
         }
 
+        @media screen and (max-width:479px) {
+            width: 290px;
+        }
+
 
     }
 
@@ -100,6 +108,10 @@
         &:nth-child(4){
             margin-bottom: 0;
         }
+    }
+
+    @media screen and (max-width:479px) {
+        width: 290px;
     }
     
     @media screen and (min-width:768px) {

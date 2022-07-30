@@ -76,7 +76,7 @@
    font-family: 'Roboto';
    font-style: normal;
    font-weight: 500;
-   font-size: 18px;
+   
    line-height: 22px;
 
 
@@ -84,6 +84,13 @@
 
    color: $accentColor;
    
+   @media screen and (max-width:479px) {
+       font-size: 12px;
+   }
+
+   @media screen and (min-width:480px) {
+    font-size: 18px;
+   }
    
    
 }
@@ -147,6 +154,10 @@ a{
     position: fixed;
     @media screen and (min-width:481px) {
         display: none;
+    }
+
+    @media screen and (max-width:479px) {
+        width: 100%;
     }
     
     z-index: 1;

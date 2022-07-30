@@ -50,8 +50,12 @@
         width: 370px;
     }
 
-    @media screen and (max-width:480px) {
+    @media screen and (max-width:767px) {
         width: 450px;
+    }
+
+    @media screen and (max-width:479px) {
+        width: 290px;
     }
 
 

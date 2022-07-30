@@ -29,6 +29,8 @@
 
 .filter{
     
+
+
     
     @media screen and (min-width:480px) {
         display: flex;
@@ -36,6 +38,9 @@
         gap: 8px;
         row-gap: 15px;
         margin-bottom: 40px;
+        &__element {
+            margin-right: 8px;
+        }
     }
 
     @media screen and (min-width:768px) {
@@ -65,9 +70,34 @@
         }
     }
 
-    &__element{
-        margin-right: 8px;
+    @media screen and (max-width:479px) {
+        
+        justify-content: start;
+
+
+        &__element:not(:first-child){
+        margin-right: 15px;
+        }
+
+        &__element:first-child {
+            margin-right: 52px;
+        }
+
+        &__element:nth-child(3) {
+            margin-top: 15px;
+        }
+       
+        &__element:nth-child(2) {
+            margin-left: 10px;
+        }
+
+        &__element:nth-child(5) {
+            margin-bottom: 10px;
+        }
+       
     }
+
+    
 
     &__element:nth-child(5){
         margin-right: 0;
