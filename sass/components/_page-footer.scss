@@ -80,10 +80,28 @@ address{
 }
 
 .foot-container {
+
+    
+
+    @media (min-width:768px) and (max-width:1599px) {
+        width: 768px;
+        padding-top: 0;
+        padding-bottom: 0;
+        
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+
     @media screen and (min-width:1600px) {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: flex-start;
+        
+
     }
 
     @media screen and (max-width:767px) {
@@ -99,15 +117,25 @@ address{
     margin-bottom: 9px;
 }
 
-
+@media screen and (min-width:768px) {
+    .footer-address {
+        margin-bottom: 60px;
+    }
+}
 
 .join {
-    @media screen and(min-width:1600px) {
-        margin-left: 70px;
+    @media screen and (min-width:768px) {
+        padding-top: 65px;
     }
+
+   @media screen and (min-width:1600px) {
+       margin-left: 70px;
+       padding-top: 0;
+   }
 
     @media screen and(max-width:767px) {
         margin-left: 0;
+        margin-top: 60px;
     }
 
     &-title{
@@ -122,12 +150,11 @@ address{
         color: #FFFFFF;
         margin: 0;
         margin-bottom: 20px;
-
-        @media screen and (min-width:768px) {
-            position: absolute;
-            top: 65px;
-            right: 119px;    
+        @media screen and (max-width:1599px) {
+            text-align: center;
         }
+
+        
 
         @media  screen and (min-width:1600px) {
             position: static;
@@ -141,9 +168,7 @@ address{
         @include centeredFlex;
         margin-bottom: 60px;
         @media screen and (min-width:768px) {
-            top: 101px;
-            right: 89px;
-            position: absolute;
+            
         }
 
         @media screen and (min-width:1600px) {
@@ -260,6 +285,10 @@ address{
             
             @include centeredFlex;
         }
+
+        @media screen and (max-width:767px) {
+            padding-bottom: 60px;
+        }
     }
 }
 
@@ -292,3 +321,23 @@ address{
     height: 24px;
 }
 
+@media (min-width:768px) and (max-width:1599px) {
+    .footer-div {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width:1600px) {
+    .footer-div{
+        display: flex;
+        justify-content: baseline;
+    }
+}
+
+
+@media screen and (max-width:767px) {
+    .footer-div__first{
+        padding-top: 60px;
+    }
+}
