@@ -135,7 +135,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
     background-color: #FFFFFF;
     @media screen and (min-width:768px) {
         width:528px;
@@ -147,7 +147,7 @@
     }
 
     @media screen and (max-width:479px) {
-        width: 290px;
+        width: 100%;
     }
 
     padding: 40px;
@@ -399,7 +399,7 @@ label {
         width: 448px;
     }
 
-    @media screen and (max-width:767px) {
+    @media (min-width:480px) and (max-width:767px) {
         margin-right: 40px;
     }
     height: 40px;

@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     border: none;
-    z-index: 2;
     background-color: transparent;
 
     @media screen and (min-width:768px) {
@@ -19,6 +18,11 @@
 
     &.is-open .icon-close{
         display: block;
+        
+    }
+
+    &.is-open{
+        z-index: 2;
     }
 
     &.is-open .icon-menu {
@@ -46,7 +50,7 @@
     
     color: $accentColor;
 
-    margin-top: 302px;
+    
     margin-bottom: 32px;
 
     display: block;
@@ -131,6 +135,10 @@
     
 }
 
+.mobile-menu__page-list{
+    margin-bottom: auto;
+}
+
 a{
     color: inherit;
 }
@@ -158,11 +166,18 @@ a{
 
     @media screen and (max-width:479px) {
         width: 100%;
+        
+    }
+
+    @media screen and (max-width:767px) {
+        padding-bottom: 30px;
     }
     
     z-index: 1;
 
     &.is-open{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        
     }
 }

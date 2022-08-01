@@ -10,6 +10,11 @@
         padding-bottom: 60px;
     }
 
+    @media (min-width:768px) and (max-width:1599px) {
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+
     
     
 }
@@ -28,9 +33,7 @@
     letter-spacing: 0.03em;
 
     color: #FFFFFF;
-    @media screen and (min-width:768px) {
-        margin-left: 76px;
-    }
+    
 
     @media screen and (min-width:1600px) {
         margin-left: 0;
@@ -51,7 +54,7 @@ address{
 .footer-data-mb{
     
     @media screen and (min-width:768px) {
-        margin-left: 115px;
+        
         width: 232px;
     }
     
@@ -74,21 +77,17 @@ address{
 
 
 
-.data-foot-tel {
-    margin-bottom: 60px;
 
-}
 
 .foot-container {
-
-    
+   @media screen and (max-width:1599px) {
+      padding: 0 15px;
+   }
 
     @media (min-width:768px) and (max-width:1599px) {
         width: 768px;
         padding-top: 0;
         padding-bottom: 0;
-        
-        padding: 0 15px;
         margin: 0 auto;
     }
 
@@ -117,16 +116,14 @@ address{
     margin-bottom: 9px;
 }
 
-@media screen and (min-width:768px) {
+@media (min-width:768px) and (max-width:1599px) {
     .footer-address {
         margin-bottom: 60px;
     }
 }
 
 .join {
-    @media screen and (min-width:768px) {
-        padding-top: 65px;
-    }
+   
 
    @media screen and (min-width:1600px) {
        margin-left: 70px;
@@ -299,7 +296,7 @@ address{
     width: 358px;
     
     @media screen and (max-width:479px) {
-        width: 320px;
+        width: 100%;
     }
 
     @media screen and (min-width:1600px) {
@@ -329,6 +326,11 @@ address{
     .footer-div {
         display: flex;
         justify-content: space-around;
+        
+    }
+
+    .footer-div__first{
+        text-align: center;
     }
 }
 
