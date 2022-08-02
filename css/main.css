@@ -1404,6 +1404,7 @@ address {
 }
 
 .mail-enter {
+  padding: 15px 16px;
   height: 50px;
   width: 358px;
   background-color: inherit;
@@ -1705,9 +1706,6 @@ address {
     row-gap: 15px;
     margin-bottom: 40px;
   }
-  .filter__element {
-    margin-right: 8px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1748,12 +1746,6 @@ address {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-  .filter__element:nth-child(5) {
-    margin-top: 15px;
-  }
-  .filter__element:nth-child(4) {
-    margin-top: 15px;
   }
 }
 
@@ -2162,6 +2154,12 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
 
 .container {
